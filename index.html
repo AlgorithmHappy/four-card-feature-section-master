@@ -22,33 +22,85 @@
       font-family: 'Poppins', sans-serif;
     }
 
+    body{
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 70px;
+    }
+
     header {
       text-align: center;
-      color: hsl(234, 12%, 34%);
+      margin-bottom: 70px;
     }
 
     h1,
     span {
-      font-size: 3rem;
+      font-size: x-large;
     }
 
     h1 {
-      font-weight: 200;
+      font-weight: 200;  
     }
 
     span {
       font-weight: 600;
     }
 
+    section{
+      display: block;
+    }
+
     div{
-      width: 350px;
-      background-color: gray;
-      height: 280px;
-      border-color: white;
-      border-width: 1px;
+      height: 230px;
+      border-top-style: solid;
+      border-width: 5px 0 0 0;
+      border-radius: 7px;
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 30px 30px 30px 30px;
+      box-shadow: 5px 5px 25px  hsl(229, 6%, 66%);
+    }
+
+    .cyan{
+      color: hsl(180, 62%, 55%);
+    }
+
+    .rojo{
+      color: hsl(0, 78%, 62%);
+    }
+
+    .naranja{
+      color: hsl(34, 97%, 64%);
+    }
+
+    .azul{
+      color: hsl(212, 86%, 64%);
+    }
+
+    .morado-oscuro{
+      color: hsl(234, 12%, 34%);
+    }
+
+    .tamanyo-xxchico{
+      font-size: 13px;
+    }
+
+    .iconos-float-right{
+      float: right;
+      margin-top: 30px;
+    }
+
+    h2{
+      font-size: medium;
+    }
+
+    p{
+      color: hsl(229, 6%, 66%);
     }
 
     .attribution {
+      margin-top: 70px;
       font-size: 11px;
       text-align: center;
     }
@@ -56,11 +108,43 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    @media (min-width: 1440px) {
+      h1,
+      span {
+        font-size: xx-large;
+      }
+
+      section{
+        display: flex;
+        flex-flow: column wrap;
+        height: 570px;
+        width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .tarjeta{
+        width: 320px;
+        height: 260px;
+        box-shadow: 0px 1px 40px  hsl(229, 6%, 66%);
+      }
+
+      .tarjeta-margin-top{
+        margin-top: 155px;
+      }
+
+      .achicar{
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
   </style>
 </head>
 
 <body>
-  <header>
+  <header class="morado-oscuro">
     <h1>Reliable, efficient delivery
       <br>
       <span>Powered by Technology</span>
@@ -68,29 +152,35 @@
     
     <br>
     
-    <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
+    <p class="achicar">Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful</p>
   </header>
+
   <section>
-    <div>
-      Supervisor
-      Monitors activity to identify project roadblocks
+    <div class="cyan tarjeta tarjeta-margin-top">
+      <h2 class="morado-oscuro">Supervisor</h2>
+      <p class="tamanyo-xxchico">Monitors activity to identify project roadblocks</p>
+      <img src="images/icon-supervisor.svg" alt="" srcset="" class="iconos-float-right">
     </div>
 
-    <div>
-      Team Builder
-      Scans our talent network to create the optimal team for your project
+    <div class="rojo tarjeta inline-block">
+      <h2 class="morado-oscuro">Team Builder</h2>
+      <p class="tamanyo-xxchico">Scans our talent network to create the optimal team for your project</p>
+      <img src="images/icon-team-builder.svg" alt="" srcset="" class="iconos-float-right">
     </div>
 
-    <div>
-      Karma
-      Regularly evaluates our talent to ensure quality
+    <div class="naranja tarjeta inline-block">
+      <h2 class="morado-oscuro">Karma</h2>
+      <p class="tamanyo-xxchico">Regularly evaluates our talent to ensure quality</p>
+      <img src="images/icon-karma.svg" alt="" srcset="" class="iconos-float-right">
     </div>
 
-    <div>
-      Calculator
-      Uses data from past projects to provide better delivery estimates
+    <div class="azul tarjeta tarjeta-margin-top">
+      <h2 class="morado-oscuro">Calculator</h2>
+      <p class="tamanyo-xxchico">Uses data from past projects to provide better delivery estimates</p>
+      <img src="images/icon-calculator.svg" alt="" srcset="" class="iconos-float-right">
     </div>
   </section>
+
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
